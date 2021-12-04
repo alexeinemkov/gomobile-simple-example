@@ -2,7 +2,7 @@
 Пример создания библиотеки для android
 
 
-Структура проекта
+Структура проекта:
 
 ```
 gomobile-simple-example/
@@ -16,11 +16,12 @@ gomobile-simple-example/
 ```
 
 
-Создаем модуль:
+Создаём модуль:
 
 ```bash
 go mod init libmobile/src/go/go_say_hi
 ```
+
 В корневой директории должен появиться файл *go.mod*
 
 Проверить чтобы в **PATH** был путь до *jdk* (Windows):
@@ -29,7 +30,7 @@ go mod init libmobile/src/go/go_say_hi
 C:\Program Files\Android\Android Studio\jre\bin;
 ```
 
-Проверить сушествование переменной **ANDROID_NDK_HOME**, в ней путь до NDK:
+Проверить существование переменной **ANDROID_NDK_HOME**, в ней путь до NDK:
 
 ```
 C:\Users\username\AppData\Local\Android\SDK\ndk\ndk-bundle\android-ndk-r23b
@@ -41,7 +42,7 @@ C:\Users\username\AppData\Local\Android\SDK\ndk\ndk-bundle\android-ndk-r23b
 $Env:ANDROID_NDK_HOME="C:\Users\username\AppData\Local\Android\SDK\ndk\ndk-bundle\android-ndk-r23b"
 ```
 
-Установка gomobile
+Установка *gomobile*:
 
 ```bash
 go get golang.org/x/mobile/cmd/gobind
@@ -69,7 +70,7 @@ gomobile bind -v  -o app/libs/go_say_hi.aar -target=android ./libmobile/src/go/g
 File > New > New Module > Import .JAR or .AAR package
 ```
 
-Библиотек появится в структуре проекта как новый модуль
+Библиотека появится в структуре проекта как новый модуль
 
 Необходимо добавить зависимости в модуль *app*:
 
