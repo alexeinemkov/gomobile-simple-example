@@ -66,17 +66,13 @@ gomobile bind -v  -o app/libs/go_say_hi.aar -target=android ./libmobile/src/go/g
 
 Импорт в Android Studio:
 
-```
 File > New > New Module > Import .JAR or .AAR package
-```
 
 Библиотека появится в структуре проекта как новый модуль
 
 Необходимо добавить зависимости в модуль *app*:
 
-```
 File > Project Structure > app -> Нажимаем на **+** или *Alt+Insert* -> Выбираем Module Dependency
-```
 
 Теперь можно пользоваться библиотекой:
 
