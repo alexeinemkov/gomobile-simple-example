@@ -79,3 +79,6 @@ File > Project Structure > app -> Нажимаем на **+** или *Alt+Insert
 ```
 import go_say_hi.Go_say_hi;
 ```
+
+
+На хабре что-то похожее, но немного устарело - [Хабр](https://habr.com/ru/post/277705/)
