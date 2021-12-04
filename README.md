@@ -21,15 +21,15 @@ gomobile-simple-example/
 ```bash
 go mod init libmobile/src/go/go_say_hi
 ```
-В корневой директории должен появиться файл *go.mo*
+В корневой директории должен появиться файл *go.mod*
 
-Проверить чтобы в **PATH** был путь до *jdk*, в моем случае (Windows):
+Проверить чтобы в **PATH** был путь до *jdk* (Windows):
 
 ```
 C:\Program Files\Android\Android Studio\jre\bin;
 ```
 
-Проверить сушествование переменной **ANDROID_NDK_HOME**:
+Проверить сушествование переменной **ANDROID_NDK_HOME**, в ней путь до NDK:
 
 ```
 C:\Users\username\AppData\Local\Android\SDK\ndk\ndk-bundle\android-ndk-r23b
@@ -74,7 +74,7 @@ File > New > New Module > Import .JAR or .AAR package
 Необходимо добавить зависимости в модуль *app*:
 
 ```
-File > Project Structure > app -> Нажимаем на "плюс" или Alt+Insert -> Выбираем Module Dependency
+File > Project Structure > app -> Нажимаем на **+** или *Alt+Insert* -> Выбираем Module Dependency
 ```
 
 Теперь можно пользоваться библиотекой:
